@@ -1,0 +1,127 @@
+Dashboard->Branding
+------------
+Welcome to Theb Media
+
+A private streaming server for family and friends.
+
+For authorized users only.
+------------
+
+.pageTitleWithDefaultLogo {
+    background-image: url("https://github.com/theb6666/Design/blob/1fc392160d83b2ec0cfbb69e782fb2d74aa02a3e/logo/Theb_Media_logo.png?raw=true") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    
+    /* បន្ថែមបន្ទាត់កម្ពស់នេះ ដើម្បីបង្រីក Logo */
+    height: 50px !important; 
+    
+    width: auto !important; 
+    padding-right: 150px; 
+}
+
+img.pageTitleWithDefaultLogo {
+    display: none !important;
+}
+
+.pageTitleWithDefaultLogo {
+    background-position: left center !important;
+    width: auto !important; 
+    padding-right: 130px; 
+}
+
+.pageTitleWithDefaultLogo::after {
+    content: "Theb Media";
+    color: #ffffff; /* ពណ៌អក្សរ (បច្ចុប្បន្នជាពណ៌ស) */
+    font-size: 26px; /* ទំហំអក្សរ */
+    font-weight: bold; /* ធ្វើឱ្យអក្សរដិតធំ */
+    margin-left: 60px; /* គម្លាតចេញពីរូប Logo (អាចបន្ថែមលេខនេះបើ Logo របស់អ្នកធំ) */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ១. រចនាប្រអប់ Login កណ្តាល ឱ្យទៅជាកញ្ចក់ព្រិល (Glassmorphism) និងពង្រីកទំហំ */
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    background: rgba(20, 20, 20, 0.25) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border: 1px solid #1fbdd2 !important;
+    border-radius: 24px !important;
+    max-width: 480px !important;
+    width: 100% !important;
+    margin: 8vh auto !important;
+    padding: 50px 45px !important;
+    box-shadow: 0 8px 32px 0 rgba(171, 244, 255, 0.3) !important;
+}
+
+/* ២. ប្តូរពណ៌អក្សរទាំងអស់ឱ្យសស្អាត ងាយមើលលើកញ្ចក់ */
+#loginPage h1, 
+#loginPage h2, 
+#loginPage h3, 
+#loginPage p, 
+#loginPage .checkboxLabel {
+    color: #ffffff !important;
+    text-align: center !important;
+}
+
+/* ៣. ប្រអប់វាយបញ្ចូលអក្សរ (Inputs) ជាកញ្ចក់ថ្លាបន្តិច */
+#loginPage .emby-input {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* បែបផែនពេលយកម៉ៅស៍ចុចលើប្រអប់ */
+#loginPage .emby-input:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #1fbdd2 !important;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.3) !important;
+}
+
+/* ៤. ប៊ូតុង Sign In កណ្តាល */
+#loginPage .emby-button.raised[type="submit"] {
+    background: #1fbdd2 !important; /* ប្រើពណ៌ក្រហមបែប Netflix ឬដូរទៅពណ៌ដែលអ្នកចូលចិត្ត */
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 6px 20px rgba(115, 250, 255, 0.4) !important;
+    margin-top: 25px !important;
+    transition: all 0.3s ease !important;
+}
+
+#loginPage .emby-button.raised[type="submit"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(28, 193, 252, 0.6) !important;
+    background: #1fbdd2 !important;
+}
+
+/* ៥. ប៊ូតុងបន្ទាប់បន្សំ (Quick Connect / Forgot Password) */
+#loginPage .emby-button:not([type="submit"]) {
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 14px !important;
+}
+
+#loginPage .emby-button:not([type="submit"]):hover {
+    color: #ffffff !important;
+}
+
+/* ៦. Checkbox (សញ្ញាគ្រីស) */
+#loginPage .checkboxOutline {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 6px !important;
+}
+#loginPage .emby-checkbox:checked + .checkboxOutline {
+    background-color: #E50914 !important;
+    border-color: #E50914 !important;
+}
